@@ -1,0 +1,485 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 23, 2018, 12:40:36 PM
+    Author     : ZingoHotels.com
+*/
+h4{
+    font-family: -webkit-body;
+}
+
+.change-back{
+    background: url(../img/banner.png)no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.change-back-booking{
+    background: url(../img/banner2.jpg)no-repeat center fixed;
+    background-size: cover;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.std-p-tag{
+   color:  rgba(0, 0, 0, 0.88)!important;
+   font-weight: 300;
+   /*font-family: -webkit-pictograph;*/
+}
+#mainLoader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    background: rgba(30, 30, 31, 0.5);
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#makeAlert{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top:10%
+}
+#big_screen img{
+
+}
+#big_screen span{
+    margin-left: 125px;
+    font-size: 12px;
+    padding-top: -49px;
+    position: absolute;
+    font-family: cursive;
+    font-weight: 300;
+    /* font-style: inherit; */
+    top: 79px;
+    color: #451001;
+}
+
+#small_screen span{
+    margin-left: 80px;
+    font-size: 11px;
+    padding-top: -49px;
+    position: absolute;
+    font-family: cursive;
+    font-weight: 300;
+    /* font-style: inherit; */
+    top: 100px;
+    color: #451001;
+}
+
+@media only screen and (max-width: 600px) {
+    #big_screen {
+        display:none;
+    }
+    #small_screen img {
+        display: block;
+        width:55%;
+    }
+    #small_screen {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 610px) {
+    #big_screen img {
+        display: block;
+        width:28%;
+    }
+    #small_screen {
+        display: none;
+    }
+}
+.zoom {
+
+    transition: transform 1.9s;
+
+}
+
+.zoom:hover {
+
+    transform: scale(0.95); 
+
+}
+.masthead1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(79, 70, 34, 0.66) 75%, #58502d 100%),  url("../img/contact1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.masthead1 h1 {
+    font-family: 'Varela Round';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.masthead1 h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .masthead1 h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead1 {
+        height: 40vh;
+        padding: 0;
+    }
+    .masthead1 h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .masthead1 h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+.masthead2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(79, 70, 34, 0.66) 75%, #58502d 100%),  url("../img/room6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.masthead2 h1 {
+    font-family: 'Varela Round';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.masthead2 h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .masthead2 h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead2 {
+        height: 40vh;
+        padding: 0;
+    }
+    .masthead2 h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .masthead2 h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+
+.masthead3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(79, 70, 34, 0.66) 75%, #58502d 100%),  url("../img/img_8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.masthead3 h1 {
+    font-family: 'Varela Round';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.masthead3 h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .masthead3 h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead3 {
+        height: 40vh;
+        padding: 0;
+    }
+    .masthead3 h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .masthead3 h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+
+.masthead4 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(79, 70, 34, 0.66) 75%, #58502d 100%),  url("../img/restaurant.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.masthead4 h1 {
+    font-family: 'Varela Round';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.masthead4 h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .masthead4 h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead4 {
+        height: 40vh;
+        padding: 0;
+    }
+    .masthead4 h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .masthead4 h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+
+
+.checked {
+    color: orange;
+}
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    width:196px;
+    height:210px;
+    position: relative;
+    -webkit-transition: all 200ms ease-out;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+/*Small Screen */ 
+@media only screen and (max-width: 600px) { 
+    #quickbooking {
+        z-index: 999;
+        width: 90%;
+        float:left;
+        position: relative;
+        left:10%;
+        margin-top: 15px;
+        font-size: 13px;
+
+    }
+    #quickbooking h6 {
+        margin-bottom: -10px;
+        margin-top: -5px;
+    }
+    #quickbooking input {
+        font-size: 13px;
+
+
+    }
+    #quickbooking .mobile{
+        width: 50%;
+    }
+    #makeAlert{
+        display: none;
+        position: fixed;
+        z-index: 999;
+        right: 0px;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top:0%
+    }
+    #phoneViewEmail{
+        display: none;
+    }
+}
+/*big screen*/
+@media only screen and (min-width: 610px) {
+    #quickbooking {
+        z-index: 999;
+        width: 340px;
+        float:right;
+        position: fixed;
+        right: 15px;
+        top:25%;
+        font-size: 13px;
+    }
+    #quickbooking h6 {
+        margin-bottom: -10px;
+        margin-top: -5px;
+    }
+    #quickbooking input {
+        font-size: 13px;
+
+    }
+    #makeAlert{
+        display: none;
+        position: fixed;
+        z-index: 999;
+        right: 20px;
+        width: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top:10%
+    }
+
+}

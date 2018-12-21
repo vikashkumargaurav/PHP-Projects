@@ -1,0 +1,33 @@
+.nopad {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+/*image gallery*/
+.room-checkbox {
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 4px solid transparent;
+	margin-bottom: 0;
+	outline: 0;
+}
+.room-checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.room-checkbox-checked {
+    border-radius: 50%;
+	border-color: #db4437;
+}
+.room-checkbox .fa {
+  position: absolute;
+  color: #db4437;
+  background-color: #fff;
+  padding: 10px;
+  top: 0;
+  right: 0;
+}
+.room-checkbox-checked .fa {
+  display: block !important;
+}

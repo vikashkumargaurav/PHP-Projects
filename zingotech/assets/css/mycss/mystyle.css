@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 14, 2018, 3:33:09 PM
+    Author     : ZingoHotels.com
+*/
+.down-show-border:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    margin: auto;
+    width: 70px;
+    height: 2px;
+    background: #4b8ae7;
+    opacity: .9;
+}
+
+#section-home{
+    background: #4b0082;
+    background: -moz-linear-gradient(45deg, #4b0082 0%, #c7c7dc45 100%);
+    background: -webkit-linear-gradient(45deg, #4b0082 0%, #c7c7dc45 100%);
+    background: -o-linear-gradient(45deg, #4b0082 0%, #c7c7dc45 100%);
+    background: linear-gradient(45deg, #4b0082 0%, #c7c7dc45 100%);
+}
+
+ #loader {
+     margin-left: 36%;
+     margin-bottom: 10px;
+     border: 10px solid #f3f3f3;
+     border-radius: 50%;
+     border-top: 10px solid #3498db;
+     width: 60px;
+     height: 60px;
+     -webkit-animation: spin 2s linear infinite; /* Safari */
+     animation: spin 2s linear infinite;
+ }
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hoverit :hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.zoomout img {
+    height: 300px;
+    width: 300px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+.zoomout img:hover {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.btnactive {
+    background: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+.box {
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    padding: 10px;
+    height: 100px;
+    width: calc(25% - 10px);
+    float: left;
+    margin: 5px;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+}
+.spacer {
+    clear: both;
+    height: 20px;
+}

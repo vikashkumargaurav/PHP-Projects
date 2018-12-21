@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 3, 2018, 3:49:56 PM
+    Author     : ZingoHotels.com
+*/
+/*    body { background: #999; cursor: default; }*/
+    .note {
+        position: relative;
+        width: auto;
+        padding: 1em 1.5em;
+        margin: 2em auto;
+        color: black;
+        background: #f8f9fa;
+        overflow: hidden;
+    }
+
+    .note:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 0 16px 16px 0;
+        border-style: solid;
+        border-color:#ced4da #ced4da #eeeeee #658E15;
+        background: #658E15;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        /* Firefox 3.0 damage limitation */
+        display: block; width: 0;
+    }
+
+    .note.rounded {
+        -moz-border-radius: 5px 0 5px 5px;
+        border-radius: 5px 0 5px 5px;
+    }
+
+    .note.rounded:before {
+        border-width: 8px;
+        border-color: #fff #fff transparent transparent;
+        -moz-border-radius: 0 0 0 5px;
+        border-radius: 0 0 0 5px;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    .display_font_small{
+        font-size: 11px;
+    }
+    .display_font_medium{
+        font-size: 13px;
+    }
+    table.meta, table.balance { float: right; width:auto; }

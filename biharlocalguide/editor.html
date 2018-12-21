@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>-->
+    <!--<script src="//cdn.ckeditor.com/4.10.1/full/ckeditor.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
+
+</head>
+<body>
+<div id="demo" class="">
+    <div id="dataContainer " class="">
+
+    </div>
+
+</div>
+<script>
+    var dataContainer = $('#dataContainer');
+    $('#demo').pagination({
+        dataSource: 'http://zingolocals.azurewebsites.net/api/Pagination/GetBlogs?pageNumber=test.json?pageNumber=2&pageSize=10&_pageSize='+10+'&pageSize='+10,
+        locator: 'items',
+        totalNumber: 120,
+        pageSize: 20,
+        ajax: {
+            beforeSend: function() {
+                // dataContainer.html('Loading data from flickr.com ...');
+            }
+        },
+        callback: function(data, pagination) {
+            console.log(data);
+            // template method of yourself
+            // var html = template(data);
+            // console.log(html);
+        }
+    })
+</script>
+</body>
+</html>
+<!--CKEDITOR.instances.editor1.getData();-->

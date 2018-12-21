@@ -1,0 +1,34 @@
+.myFixedPageBtn{
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    display: inline;
+    /*width: 50px;*/
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    /*background: rgba(52, 58, 64, 0.5);*/
+    line-height: 46px;
+    cursor: pointer;
+    width: 150px;
+    background-color: rgba(244, 32, 2, 0.79);
+}
+
+.myFixedPageRightsideBtn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: inline;
+    /*width: 50px;*/
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    /*background: rgba(52, 58, 64, 0.5);*/
+    line-height: 46px;
+    cursor: pointer;
+    width: 150px;
+    background-color: rgba(244, 32, 2, 0.79);
+}
+label{
+    font-weight: 700;
+}

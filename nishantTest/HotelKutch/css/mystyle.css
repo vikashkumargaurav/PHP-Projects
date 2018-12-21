@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 10, 2018, 11:41:08 AM
+    Author     : ZingoHotels.com
+*/
+.saving{
+    float: right;
+    padding: .7em .9em;
+    border-radius: 0rem;
+    margin-right: -10px;
+    margin-top: 0px;
+}
+
+.change-back{
+    background: url(../img/banner.png)no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.change-back-booking{
+    background: url(../img/banner2.jpg)no-repeat center fixed;
+    background-size: cover;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.std-p-tag{
+    color:  rgba(0, 0, 0, 0.88)!important;
+    font-weight: 300;
+    /*font-family: -webkit-pictograph;*/
+}
+#mainLoader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    background: rgba(30, 30, 31, 0.5);
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#myloader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#myloader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#myloader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#makeAlert{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top:10%
+}
+#big_screen img{
+
+}
+#big_screen span{
+    margin-left: 125px;
+    font-size: 12px;
+    padding-top: -49px;
+    position: absolute;
+    font-family: cursive;
+    font-weight: 300;
+    /* font-style: inherit; */
+    top: 79px;
+    color: #451001;
+}
+
+#small_screen span{
+    margin-left: 80px;
+    font-size: 11px;
+    padding-top: -49px;
+    position: absolute;
+    font-family: cursive;
+    font-weight: 300;
+    /* font-style: inherit; */
+    top: 100px;
+    color: #451001;
+}
+
+@media only screen and (max-width: 600px) {
+    #big_screen {
+        display:none;
+    }
+    #small_screen img {
+        display: block;
+        width:55%;
+    }
+    #small_screen {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 610px) {
+    #big_screen img {
+        display: block;
+        width:28%;
+    }
+    #small_screen {
+        display: none;
+    }
+}
+
+
+
+/*Small Screen */ 
+@media only screen and (max-width: 600px) { 
+   .BookingDetailsDiv{
+    padding: 10px;
+    position: absolute;
+    float: right;
+    min-width: 350px;
+    right:  6px;
+    z-index: 100;
+    background: #ffffff47;
+    margin-top: -88px;
+}  
+}
+/*big screen*/
+@media only screen and (min-width: 610px) {
+  .BookingDetailsDiv{
+    padding: 10px;
+    position: absolute;
+    float: right;
+    min-width: 350px;
+    right:  85px;
+    z-index: 100;
+    background: #ffffff47;
+    margin-top: -88px;
+}  
+}

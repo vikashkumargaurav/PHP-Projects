@@ -1,0 +1,63 @@
+<div ng-controller="LoginController">
+
+    <div class="container  mr-5 mt-5 text-center ">
+        <div class="card w-75">
+            <div class="card-header bg-primary text-white">
+                <h2 class="text-center">Customer Details </h2>
+            </div>
+            <div class="card-body" >
+                <table  class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <td scope="col">1</td>
+                        <td scope="col">Traveller ID</td>
+                        <td scope="col">{{travellerId}}</td>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <td scope="col">2</td>
+                        <td scope="col">Full Name</td>
+                        <td scope="col">{{fullname}}</td>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <td scope="col">3</td>
+                        <td scope="col">Email</td>
+                        <td scope="col">{{email}}</td>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <td scope="col">4</td>
+                        <td scope="col">Mobile No</td>
+                        <td scope="col">{{mobileno}}</td>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <td scope="col">5</td>
+                        <td scope="col">Gender</td>
+                        <td scope="col">{{gender}}</td>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <td scope="col">6</td>
+                        <td scope="col">DOB</td>
+                        <td scope="col"><span ng-bind="dob | date:'MM/dd/yyyy'"></span></td>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <td scope="col">7</td>
+                        <td scope="col">Location</td>
+                        <td scope="col">{{location}}</td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
